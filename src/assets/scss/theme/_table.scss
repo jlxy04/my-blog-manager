@@ -1,0 +1,154 @@
+@charset "utf-8";
+/**
+ * Created with WebStorm.
+ * User: rico ricopter@qq.com
+ * Date: 2018/4/9
+ * Time: 16:53
+ * */
+
+/*基础表格*/
+.m-section-table{
+  border-top: 1px solid #ebeef5;
+  border-left: 1px solid #ebeef5;
+  border-bottom: 1px solid #ebeef5;
+  .m-base-table{
+    border-top: none;
+  }
+  .m-base-table::before{
+    height: 0;
+  }
+  //.m-base-table table > tbody > tr:last-child td{
+  //  border-bottom: none;
+  //}
+}
+
+.m-base-table{
+  .u-baseTable-th th{
+    background: #f5f7fa;
+  }
+  tbody tr td .el-tag{
+    margin: 0 5px;
+  }
+}
+
+.m-pagination-mod{
+  margin: 30px auto;
+  text-align: right;
+}
+
+.m-col-tags-table{
+  margin-left: 40px;
+}
+/*标签特殊表格*/
+.u-tagsTable-mod{
+
+  .tags-table-wrap{
+    //border-top: 1px solid #ebeef5;
+    //border-left: 1px solid #ebeef5;
+    border:1px solid #ebeef5;
+  }
+
+  // 三角形
+  .tags-table-column-filter-trigger {
+    display: inline-block;
+    line-height: 34px;
+    cursor: pointer
+  }
+
+  .tags-table-column-filter-trigger i {
+    color: #909399;
+    font-size: 12px;
+    -webkit-transform: scale(.75);
+    transform: scale(.75)
+  }
+
+  .tags-table{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    max-width: 100%;
+    font-size: 14px;
+    color: #606266;
+    .cell{
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      white-space: normal;
+      word-break: break-all;
+      line-height: 23px;
+      position: relative;
+      word-wrap: normal;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+      width: 100%;
+      display: inline-block;
+      padding-right: 10px;
+      padding-left: 14px;
+    }
+
+    .tags-table-column{
+      white-space: nowrap;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      text-align: left;
+      padding: 12px 0;
+      min-width: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+      position: relative;
+    }
+
+    tr{
+      background: #fff;
+    }
+
+    td,th{
+      padding: 12px 0;
+      min-width: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+      position: relative;
+      border-right: 1px solid #ebeef5;
+      border-bottom: 1px solid #ebeef5;
+    }
+
+    thead{
+      color: #909399;
+      font-weight: 500;
+      table-layout: fixed;
+      border-collapse: separate;
+      tr{
+        background: #f5f7fa;
+      }
+
+    }
+
+    tbody{
+      table-layout: fixed;
+      border-collapse: separate;
+      td{
+        -webkit-transition: background-color .25s ease;
+        transition: background-color .25s ease;
+      }
+      .cell,.tags-table-column{
+        overflow: hidden;
+      }
+    }
+
+    tfoot{
+      table-layout: fixed;
+      border-collapse: separate;
+    }
+  }
+}

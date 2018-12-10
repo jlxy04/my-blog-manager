@@ -1,0 +1,85 @@
+@charset "utf-8";
+/**
+ * Created with WebStorm.
+ * User: rico ricopter@qq.com
+ * Date: 2018/4/13
+ * Time: 11:33
+ * */
+.g-home-page{
+  .el-table__expanded-cell[class*=cell]{
+    padding: 0;
+  }
+  .el-dialog__title{
+     color: #409EFF;
+  }
+  //.el-tree-node__content:hover{
+  //  background: #f5f7fa;
+  //  color: #409EFF;
+  //}
+  .el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content{
+    background: #f5f7fa;
+    color: #409EFF;
+  }
+
+  .m-doc-tree{
+    max-height: 527px;
+    overflow-x:auto;
+    overflow-y:auto;
+    border: 1px solid #ebeef5;
+    .mdt-tit{
+      text-align: center;
+      padding: 15px 0;
+      color: #909399;
+      background: #f5f7fa;
+      b{
+        color: #909399;
+        font-size: 14px;
+      }
+    }
+    .mdt-section{
+      text-align: left;
+      padding: 10px 10px;
+      border-bottom: 1px dashed #ddd;
+      cursor: pointer;
+      b{
+        // color: #409EFF;
+        color: #606266;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      i{
+        color: #c0c4cc;
+        font-size: 12px;
+      }
+      &:hover{
+        background: #f5f7fa;
+        b,i{
+          color: #409EFF;
+        }
+      }
+    }
+    .currentNotFloder b{
+      color: #409EFF;
+    }
+    .mdt-cont{
+      padding: 5px;
+    }
+  }
+
+  .custom-tree-node{
+    text-align: right;
+    .label-name{
+      display: inline-block;
+      width: 90px;
+      vertical-align:middle;
+      @include text-overflow();
+    }
+    .custom-del-btn{
+      margin-left: 20px;
+    }
+  }
+
+  .el-dialog--center{
+    min-width: 400px;
+  }
+}
